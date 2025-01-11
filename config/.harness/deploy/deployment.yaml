@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: harness_demo
+  name: harness-demo
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: harness_demo
+      app: harness-demo
   template:
     metadata:
       labels:
-        app: harness_demo
+        app: harness-demo
     spec:
       containers:
       - image: 1903/harness_demo:11
-        name: harness_demo
+        name: harness-demo
         ports:
         - containerPort: 80
