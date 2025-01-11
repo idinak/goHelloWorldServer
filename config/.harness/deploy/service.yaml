@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: harness_demo
+  name: harness-demo
 spec:
   ports:
   - port: 80
     targetPort: 80
   selector:
-    app: harness_demo
+    app: harness-demo
